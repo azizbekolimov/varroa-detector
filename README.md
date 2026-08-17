@@ -280,6 +280,10 @@ python -m src.predict path/to/bee.png
 python -m src.predict path/to/folder/
 ```
 
+`models/` is gitignored, so the trained checkpoint is not included in this
+repository. Run `python -m src.training.train_final` to produce it before
+using `predict.py` or `evaluate_test.py`.
+
 `predict.py` defaults to the committed threshold and the final checkpoint, so running it with no flags reproduces the evaluated configuration exactly.
 
 ---
